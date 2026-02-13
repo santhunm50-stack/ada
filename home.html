@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analysis and Design of Algorithms (ADA)</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    background: #222;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+}
+
+.modules {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.module {
+    background: #1c1c1c;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.module-header {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #333;
+    cursor: pointer;
+}
+
+.module-content {
+    display: none;
+    padding: 20px;
+    font-size: 17px;
+}
+
+.module-content ul {
+    padding-left: 20px;
+}
+
+.module-content li {
+    margin-bottom: 8px;
+}
+
+.download-btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background: #00c853;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.download-btn:hover {
+    background: #00a944;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    header input {
+        width: 90%;
+    }
+
+    .modules {
+        width: 95%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Analysis and Design of Algorithms (ADA)</h1>
+    <input type="text" id="searchBar" placeholder="Search topics..." onkeyup="searchTopics()">
+</header>
+
+<div class="modules">
+
+<!-- MODULE 1 -->
+<div class="module">
+<div class="module-header" onclick="toggleModule(this)">
+Module 1 – Fundamentals of Algorithms
+</div>
+<div class="module-content">
+<ul>
+<li>Introduction to Algorithms</li>
+<li>Characteristics of Algorithms</li>
+<li>Fundamentals of Algorithmic Problem Solving</li>
+<li>Time Complexity and Space Complexity</li>
+<li>Asymptotic Notations (Big O, Ω, Θ)</li>
+<li>Mathematical Analysis of Non-Recursive Algorithms</li>
+<li>Mathematical Analysis of Recursive Algorithms</li>
+<li>Selection Sort</li>
+<li>Bubble Sort</li>
+<li>Sequential Search</li>
+<li>Brute Force String Matching</li>
+</ul>
+<a href="pdfs/ADA_Module1_Fundamentals.pdf" download>
+<button class="download-btn">Download Module 1 PDF</button>
+</a>
+</div>
+</div>
+
+<!-- MODULE 2 -->
+<div class="module">
+<div class="module-header" onclick="toggleModule(this)">
+Module 2 – Divide and Conquer & Brute Force
+</div>
+<div class="module-content">
+<ul>
+<li>Divide and Conquer Strategy</li>
+<li>Merge Sort</li>
+<li>Quick Sort</li>
+<li>Binary Search</li>
+<li>Strassen’s Matrix Multiplication</li>
+<li>Travelling Salesman Problem</li>
+<li>Knapsack Problem</li>
+<li>Topological Sorting</li>
+<li>Insertion Sort</li>
+</ul>
+<a href="pdfs/ADA_Module2_BruteForce_Divide.pdf" download>
+<button class="download-btn">Download Module 2 PDF</button>
+</a>
+</div>
+</div>
+
+<!-- MODULE 3 -->
+<div class="module">
+<div class="module-header" onclick="toggleModule(this)">
+Module 3 – Transform and Conquer
+</div>
+<div class="module-content">
+<ul>
+<li>Balanced Search Trees</li>
+<li>AVL Trees</li>
+<li>Heaps and Heap Construction</li>
+<li>Heapsort</li>
+<li>Counting Sort</li>
+<li>Horspool’s Algorithm</li>
+<li>Presorting Techniques</li>
+</ul>
+<a href="pdfs/ADA_Module3_Transform_Conquer.pdf" download>
+<button class="download-btn">Download Module 3 PDF</button>
+</a>
+</div>
+</div>
+
+<!-- MODULE 4 -->
+<div class="module">
+<div class="module-header" onclick="toggleModule(this)">
+Module 4 – Greedy & Dynamic Programming
+</div>
+<div class="module-content">
+<ul>
+<li>Greedy Method</li>
+<li>Prim’s Algorithm</li>
+<li>Kruskal’s Algorithm</li>
+<li>Dijkstra’s Algorithm</li>
+<li>Huffman Coding</li>
+<li>Warshall Algorithm</li>
+<li>Floyd Algorithm</li>
+<li>Dynamic Programming Concept</li>
+<li>0/1 Knapsack using DP</li>
+</ul>
+<a href="pdfs/ADA_Module4_Greedy_Dynamic.pdf" download>
+<button class="download-btn">Download Module 4 PDF</button>
+</a>
+</div>
+</div>
+
+<!-- MODULE 5 -->
+<div class="module">
+<div class="module-header" onclick="toggleModule(this)">
+Module 5 – Backtracking & Advanced Topics
+</div>
+<div class="module-content">
+<ul>
+<li>Backtracking Concept</li>
+<li>N-Queens Problem</li>
+<li>Subset Sum Problem</li>
+<li>Branch and Bound Technique</li>
+<li>Knapsack using Branch and Bound</li>
+<li>P, NP and NP-Complete Problems</li>
+<li>Approximation Algorithms</li>
+<li>Decision Trees</li>
+</ul>
+<a href="pdfs/ADA_Module5_Advanced_Backtracking.pdf" download>
+<button class="download-btn">Download Module 5 PDF</button>
+</a>
+</div>
+</div>
+
+</div>
+
+<footer>
+© 2026 Analysis and Design of Algorithms (ADA)
+</footer>
+
+<script>
+function toggleModule(element) {
+    const content = element.nextElementSibling;
+    content.style.display =
+        content.style.display === "block" ? "none" : "block";
+}
+
+function searchTopics() {
+    const input = document.getElementById("searchBar").value.toLowerCase();
+    const topics = document.querySelectorAll(".module-content li");
+
+    topics.forEach(topic => {
+        if(topic.textContent.toLowerCase().includes(input)) {
+            topic.style.display = "list-item";
+        } else {
+            topic.style.display = "none";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
